@@ -82,9 +82,12 @@ public class Server {
 						System.out.println(e.getMessage());
 						alClient.println("BAD REQUEST: Formattazione errata data.");
 					}
+				}else {
+					alClient.println("end");
+					con.close();
 				}
 			}
-			con.close();
+			
 
 		} catch (IOException e) {
 			System.out.println("Conversazione interrotta");

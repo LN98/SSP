@@ -36,7 +36,7 @@ public class Client {
                 messaggio=dalServer.nextLine();
                 System.out.println(messaggio);
                 if (!messaggio.equals("end")){
-                    messaggio=tastiera.nextLine();
+                    messaggio=tastiera.next();
                     messaggio = "REQUEST: "+messaggio;
                     alServer.println(messaggio);
                      
